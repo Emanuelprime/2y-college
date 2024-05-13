@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <form id="meuformulario">
+        <label for="Primeironumero">numero</label>
+        <input type="number" name="" id="numero">
+        <button type="submit" id="meuBotao">Enviar</button>
+    </form>
+    
+<script>
+    const formulario = document.getElementById("meuformulario")
+    formulario.addEventListener('submit', function(evento){
+        evento.preventDefault();
+        let numero = document.getElementById('numero').value;
+
+        if (numero ===''){
+            alert('Digite um numero');
+            return false;
+        }
+
+        numero =numero*2;
+        alert(numero);
+        return true;
+    });
+
+
+
+</script>
+
+</body>
+</html>
