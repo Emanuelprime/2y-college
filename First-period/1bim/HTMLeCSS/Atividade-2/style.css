@@ -1,0 +1,241 @@
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.area-header {
+    background-color: #262318;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.museu img {
+    position: relative;
+    top: -40px;
+    width: 80%;
+    height: auto;
+    margin-left: -8%;
+
+}
+
+.depoimento {
+    margin-left: 74%;
+    margin-top: -40.8%;
+    width: auto;
+    height: 180%;
+}
+
+.area-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-right: 5%;
+}
+
+.area-menu a {
+    text-decoration: none;
+    color: #A66414;
+    margin-right: 2%;
+    margin-top: -3%;
+}
+
+.area-logo img {
+    margin-right: 64%;
+}
+
+.area-main {
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.visita {
+    background-color: #cdc8b1;
+    margin-top: 1%;
+    margin-left: 74%;
+    width: 38%;
+    height: 50%;
+
+}
+
+.visita h5 {
+    color: #87500c;
+    margin-left: 7%;
+}
+
+#data {
+    width: 28%;
+    height: 20%;
+}
+
+#numPessoas {
+    width: 7%;
+    height: 20%;
+}
+
+.visita data_qtd {
+    margin-left: 5%;
+}
+
+.visita button {
+    width: 200px;
+    height: 30px;
+    background-color: #9b9271;
+    border: none;
+    color: #ffff;
+    margin-left: 22%;
+    margin-bottom: 5%;
+}
+
+.galeria {
+    margin-top: 1%;
+    margin-left: 74%;
+    width: 38%;
+    height: 50%;
+    background-color: #e3dfcf;
+    position: relative;
+}
+
+.galeria h5 {
+    color: #87500c;
+    margin-left: 8%;    
+}
+
+.fundo {
+    width: 100%;
+    height: auto;
+}
+
+.foto1{
+   background-image: url("/First-period/HTMLeCSS/Atividade-2/images/fundo-foto.png ");
+   background-repeat: no-repeat;
+   margin-left: 10%;
+}
+
+.foto1 img{
+    height: 30%;
+    margin-left: 5%;
+    width: 30%;
+    margin-top: 5%;
+}
+
+.foto2{
+    background-image: url("/First-period/HTMLeCSS/Atividade-2/images/fundo-foto.png ");
+    background-repeat: no-repeat;
+    margin-left: 50%;
+    margin-top: -33.5%;
+}
+
+.foto2 img{
+    height: 30%;
+    width: 55%;
+    margin-top: 10%;
+    margin-left: 8%;
+}
+
+.foto3{
+    background-image: url("/First-period/HTMLeCSS/Atividade-2/images/fundo-foto.png ");
+    background-repeat: no-repeat;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+.foto3 img{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.foto4{
+    background-image: url("/First-period/HTMLeCSS/Atividade-2/images/fundo-foto.png ");
+   background-repeat: no-repeat;
+   margin-left: 50%;
+   margin-top: -32%;
+}
+
+.foto4 img{
+    margin-top: 9%;
+    margin-left: 8%;
+}
+
+.map {
+    color: #2c761d;
+    margin-top: -45%;
+    margin-left: 34%;
+}
+
+.video {
+    color: #2c761d;
+    margin-top: -21.5%;
+    margin-left: -6%;
+}
+
+.expo li{
+    color: #262318;
+    margin-left: -2%;
+}
+
+.expo span{
+    color: #bd6f0f;
+}
+
+.expo h5{
+    margin-left: -6%;
+    color: #2c761d;
+}
+
+.expo a{
+    color: #bd6f0f;
+    text-decoration: none;
+}
+
+.historia{
+    margin-left: 35%;
+    margin-top: -18%;
+}
+
+.historia h5{
+    color: #2c761d;
+}
+
+.historia a{
+    color: #bd6f0f;
+    text-decoration: none;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.footer-menu a{
+    text-decoration: none;
+    color: #A66414;
+    margin-right: 2%;
+    
+    
+}
+
+.direitos span{
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+.footer img{
+  margin-bottom: 2%; 
+}
+
+.branco {
+    color: #ffff;
+}
+
+.laranja {
+    color: #A66414;
+}

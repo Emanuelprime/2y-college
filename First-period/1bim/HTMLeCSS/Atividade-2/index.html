@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen">
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museu Nacional</title>
+</head>
+
+<body>
+    <div class="area-header">
+        <div class="area-logo">
+            <img src="../Atividade-2/images/logo.png">
+        </div>
+
+        <div class="area-menu">
+            <a href="">HOME</a>
+            <a href="">EXPOSIÇÃO</a>
+            <a href="">PESQUISA</a>
+            <a href="">ACERVO</a>
+            <a href="">VÍDEOS</a>
+            <a href="">FOTOS</a>
+            <a href="">CONTATO</a>
+        </div>
+    </div>
+    <div class="area-main">
+        <div class="museu">
+            <img src="../Atividade-2/images/museu.png">
+        </div>
+        <div class="depoimento">
+            <img src="../Atividade-2/images/depoimento.png">
+        </div>
+        <div class="visita">
+            <br>
+            <h5> FAÇA SUA VISITA</h5>
+            <br>
+            <div class="data_qtd">
+                <label for="data">data:</label>
+                <input type="date" id="data" name="data">
+                <label for="numPessoas">Qtd pessoas:</label>
+                <input type="number" id="numPessoas" name="numPessoas" min="1">
+            </div>
+            <br>
+            <button type="button" oneclick="verificar()">Verificar Disponibilidade</button>
+
+        </div>
+        <div class="galeria">
+            <br>
+            <h5> GALERIA DE FOTOS</h5>
+            <br>
+            <div class="fotos">
+            <div class="foto1">
+                <img src="../Atividade-2/images/imagem1.jpg">
+            </div>
+            <div class="foto2">
+                <img src="../Atividade-2/images/imagem2.jpg">
+            </div>
+            <div class="foto3">
+                <img src="../Atividade-2/images/imagem3.jpg">
+            </div>
+            <div class="foto4">
+                <img src="../Atividade-2/images/imagem4.jpg">
+            </div>
+            </div>
+        </div>
+        <div class="map">
+            <h5>MAPA: ENCONTRE O MUSEU</h5>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14700.808102142226!2d-43.22880341324464!3d-22.90591812514693!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-PT!2sbr!4v1710192256371!5m2!1spt-PT!2sbr"
+                width="350" height="180" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="video">
+            <h5>VÍDEO: CONHEÇA O MUSEU</h5>
+            <iframe width="350" height="180" src="https://www.youtube.com/embed/RGUYb-hivrc?si=wgdcIUzxzTO7a60k"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="expo">
+            <br>
+            <h5>EXPOSIÇÕES</h5>
+            <br>
+            <ul>
+                <li><span>Os assustadores insetos</span></li>
+                <li><span>O crânio de Luzia, a mulher mais antiga do Brasil</span></li>
+                <li><span>Preguiça gigante e tigre-dentes-de-sabre</span></li>
+                <li><span>Plantas do Brasil Central</span></li>
+                <li><span>Teresa Cristina: A Imperatriz Arqueóloga</span></li>
+                <li><span>Arte com Dinossauros - Paleoarte</span></li>
+                <li><span><a href="#">Veja todos(65)</a></span></li>
+            </ul>
+        </div>
+        <div class="historia">
+            <br>
+            <h5>200 ANOS DE HISTÓRIA</h5>
+            <br>
+            <p>Numa ponta que avançava sobre o mar,</p> <p>posteriormente conhecida como Ponta do</p> 
+            <p>Calabouço, entre as praias de Piaçaba e Santa Luzia,</p> <p>no centro histórico do Rio de Janeiro, os</p> 
+            <p>portugueses construíram em 1603 a Fortaleza de</p> 
+            <p>Santiago, origem do conjunto arquitetônico que hoje</p> abriga o Museu Histórico Nacional.
+            <br>
+            <a href="#">Leia Mais</a>
+
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer">
+        <img src="../Atividade-2/images/fundo-rodape.png">
+        <div class="footer-menu">
+            <a href="">home</a>
+            <a href="">Exposição</a>
+            <a href="">Pesquisa</a>
+            <a href="">Acervo</a>
+            <a href="">Vídeos</a>
+            <a href="">Fotos</a>
+            <a href="">Contato</a>
+        </div>
+        <div class="direitos">
+            <br>
+            2024 <span class="laranja">Museu Nacional</span> - Todos os direitos reservados.
+        </div>
+    </div>
+</footer>
+
+</html>
