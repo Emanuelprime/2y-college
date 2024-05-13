@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.container {
+    width: 750px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #3e3e3e;
+    background-image: url(/image/fundo.png);
+    height: 14.5rem;
+    display: flex;
+}
+
+.logo {
+    position: relative;
+    margin-top: 20px;
+    text-indent: -3000px;
+    z-index: 1000;
+    height: 60%;
+    
+}
+
+.mapa {
+    position: relative;
+    z-index: 0;
+    margin-top: -10rem;
+    margin-left: 560px;
+}
+
+.fundo-cidade {
+    position: absolute;
+}
+
+.navbar-container {
+    position: relative;
+    margin-top: 30px;
+    z-index: 1000;
+    background-color: #b10333;
+    width: 625px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-item {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.selecao {
+    background-color: #e50040;
+}
+
+.navbar-item:hover {
+    background-color: #e50040;
+}
+
+.background {
+    background-image: url(/image/fundo-caixa.png);
+}
+
+.entrevistas-container {
+    position: relative;
+    padding: 4px;
+    width: 10em;
+}
+
+.entrevistas-container h4 {
+    background-color: #294c71;
+    padding-left: 3px;
+    color: #fff;
+}
+
+.entrevistas-container ul {
+    background-color: #fff;
+    margin-top: 6px;
+    list-style: none;
+    padding: 0;
+}
+
+.entrevistas-container li {
+    padding: 5px;
+    border-bottom: 2px solid #f3f3f3;
+    font-size: 14px;
+}
+
+.destaque-container {
+    position: relative;
+    padding: 4px;
+    width: 570px;
+    float: right;
+    margin-top: -16.2rem;
+}
+
+.destaque-container h4 {
+    background-color: #294c71;
+    padding-left: 3px;
+    color: #fff;
+    margin-bottom: 0.6em;
+}
+
+.legislacao-container {
+    margin: 4px;
+    background-color: #fff;
+}
+
+.legislacao-container h5 {
+    background-color: #b10333;
+    width: 9em;
+    color: #fff;
+    text-align: center;
+}
+
+.legislacao-container img {
+    width: 550px;
+    border: 3px solid #a1a1a1;
+}
+
+.legislacao-container a {
+    color: #b10333;
+}
+
+.mundo-container {
+    position: relative;
+    margin-top: 1em;
+    padding: 4px;
+    width: 570px;
+    float: right;
+}
+
+.mundo-container h4 {
+    background-color: #294c71;
+    padding-left: 3px;
+    color: #fff;
+    margin-bottom: 0.6em;
+}
+
+hr {
+    margin-top: 0.5em;
+}
+
+.mundo-flex {
+    background-color: #fff;
+    margin-top: 0.5em;
+    display: flex;
+}
+
+.mundo-flex img {
+    width: 6em;
+    margin-right: 0.4em;
+}
+
+.mundo-flex h5 {
+    color: #294c71;
+}
+
+.mundo-flex p {
+    font-size: 13px;
+}
+
+.news-container {
+    background-image: url(/image/fundo-caixa.png);
+    position: relative;
+    padding: 4px;
+    width: 10em;
+}
+
+.news-container h4 {
+    background-color: #294c71;
+    padding-left: 3px;
+    color: #fff;
+}
+
+.news-container form {
+    background-color: #fff;
+    margin-top: 6px;
+    padding: 0;
+}
+
+.news-container input {
+    width: 80%;
+}
+
+.news-container a {
+    background-color: #b10333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 4px;
+}
+
+.footer-container {
+    background-color: #294c71;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 25rem;
+    height: 4rem;
+    width: 100%;
+    align-content: center;
+}
