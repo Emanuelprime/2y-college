@@ -1,0 +1,15 @@
+*{
+    padding: 0 20px;
+    margin: 0%;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar-container{
+    background-color: aqua;
+    padding:1%;
+    width: 27%;
+}
