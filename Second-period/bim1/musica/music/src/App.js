@@ -15,10 +15,10 @@ function App(){
         </nav>
         <Routes>
           <Route path="/artista" element={<Artista/>}>
-            <Artista />
+        
           </Route>
           <Route path="/" element={<Home/>}>
-            <Home />
+            
           </Route>
         </Routes>
       </div>
