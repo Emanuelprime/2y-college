@@ -14,10 +14,10 @@ function App(){
           </ul>
         </nav>
         <Routes>
-          <Route path="/artista">
+          <Route path="/artista" element={Artista}>
             <Artista />
           </Route>
-          <Route path="/">
+          <Route path="/" element={Home}>
             <Home />
           </Route>
         </Routes>
