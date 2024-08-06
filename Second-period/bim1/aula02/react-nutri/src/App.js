@@ -1,4 +1,5 @@
 import React, { useEffect , useState} from 'react';
+import './App.css';
 
 function App(){
   const [nutri, setNutri] = useState([]);
@@ -12,7 +13,8 @@ function App(){
   }, []);
 
   return(
-    <div>
+    <div
+    >
       <header>
         <strong>React Nutri</strong>
       </header>
