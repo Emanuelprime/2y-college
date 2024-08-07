@@ -28,9 +28,9 @@ p  {
   font-size: 20px;
   width: 50%;
   margin-left: 50%;
-  margin-top: 10px; /* ajusta a margem do parágrafo */
-  position: relative; /* adiciona position relative ao parágrafo */
-  top: -20px; /* ajusta a posição do parágrafo */
+  margin-top: 10px; 
+  position: relative; 
+  top: -20px; 
 }
 
 strong{
@@ -44,9 +44,9 @@ article {
   padding: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #ccc;
-  display: flex; /* adiciona display flex ao container */
-  flex-direction: column; /* define a direção do flexbox */
-  min-height: 500px; /* adiciona uma altura mínima ao container */
+  display: flex; 
+  flex-direction: column; 
+  min-height: 500px;
 }
 article:not(:last-child) {
   border-bottom: 1px solid #ccc;
