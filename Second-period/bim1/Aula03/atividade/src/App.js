@@ -38,7 +38,7 @@ function App() {
       </header>
 
       <img src={west}/>
-     {/*parágrafo com o ID "daily-quote" que será usado para exibir a citação*/}
+     {/* parágrafo com o ID "daily-quote" que será usado para exibir a citação */}
       <p id="daily-quote">
 
       </p>
