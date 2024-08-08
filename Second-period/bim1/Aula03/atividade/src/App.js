@@ -1,8 +1,8 @@
-// Importando bibliotecas e estilos
-import React, { useEffect, useState } from 'react'; // Importa a biblioteca React e dois hooks específicos
-import './App.css'; // Importa o arquivo de estilos CSS para o componente
 
-// Definindo o componente App
+import React, { useEffect, useState } from 'react'; 
+import './App.css'; 
+
+
 function App() {
   // Função generateQuote: faz uma requisição GET para a API Kanye Rest e chama a função dailyQuote com a citação obtida
   const generateQuote = () => {
@@ -31,16 +31,16 @@ function App() {
   return (
     // Define um elemento div que contém os demais elementos
     <div>
-      // Define um elemento header com o título da página
+     
       <header>
         Kayne Rest Gerador de Frases
       </header>
-      // Define um elemento parágrafo com o ID "daily-quote" que será usado para exibir a citação
+      // parágrafo com o ID "daily-quote" que será usado para exibir a citação
       <p id="daily-quote">
 
       </p>
 
-      // Define um botão que, ao ser clicado, chama a função generateQuote
+      // chama a função generateQuote
       <button onClick={() => generateQuote()}>Veja Mais</button>
     </div>
   );
