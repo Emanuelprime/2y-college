@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 function App() {
-  const generateQyote = () => {
+  const generateQuote = () => {
     fetch ('https://api.kanye.rest/')
     .then( res => res.json())
     .then(data =>dailyQuote(data))
@@ -27,3 +27,5 @@ function App() {
   );
 
 }
+
+export default App;
