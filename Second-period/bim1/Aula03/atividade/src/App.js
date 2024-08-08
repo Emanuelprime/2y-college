@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from 'react'; 
 import './App.css'; 
+import west from './Components/images/west.png';
 
 
 function App() {
@@ -35,12 +36,14 @@ function App() {
       <header>
         Kayne Rest Gerador de Frases
       </header>
-      // parágrafo com o ID "daily-quote" que será usado para exibir a citação
+
+      <img src={west}/>
+     {/*parágrafo com o ID "daily-quote" que será usado para exibir a citação*/}
       <p id="daily-quote">
 
       </p>
 
-      // chama a função generateQuote
+      {/*chama a função generateQuote*/}
       <button onClick={() => generateQuote()}>Veja Mais</button>
     </div>
   );
