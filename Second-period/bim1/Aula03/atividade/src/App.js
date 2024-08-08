@@ -18,11 +18,11 @@ function App() {
       <header>
         Kayne Rest Gerador de Frases
       </header>
-      <p id="dailyQuote">
+      <p id={dailyQuote}>
 
       </p>
 
-      <button onclick="generateQuote()">Veja Mais</button>
+      <button onclick={generateQuote()}>Veja Mais</button>
     </div>
   );
 
