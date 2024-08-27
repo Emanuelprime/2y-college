@@ -1,5 +1,6 @@
 import { useState, useEffect} from 'react';
 import {db, auth} from './firebaseConnection';
+import './App.css';
 
 import {
   doc,
@@ -20,10 +21,10 @@ signOut,
 onAuthStateChanged
 } from 'firebase/auth'
 
-function App(){
+ export default function App(){
   const [titulo, setTitulo] = useState('');
   const[autor, setAutor] = useState('');
-  const[IDpOST, setIdPost] = useState('');
+  const[idPost, setIdPost] = useState('');
 
   const[email, setEmail] = useState('');
   const[senha, setSenha] = useState('');
@@ -106,11 +107,48 @@ function App(){
   //D - delete
   async function excluirPost(id){
     const postDeletado = doc(db, "posts", id);
-    await deleteDoc(docRef).then(()=>{
+    await deleteDoc(postDeletado).then(()=>{
       alert("Post deletado com sucesso")
     }).catch((error)=>{
       console.log(error);
     })
   }
-}
 
+  return(
+    <div>
+      <h1>ReactJS + Firebase</h1>
+
+      <h2>POSTS</h2>
+      <label>ID do Post</label>
+      <input placehold="ID do post"
+      value={idPost} onChange={ (e) => setIdPost(e.target.value)}/>
+
+      <label>Título:</label>
+      <textarea
+      type="text" placholder="Titulo"
+      value={titulo} onChange={ (e) => setTitulo(e.target.value)}/>
+
+      <label>Autor:</label>
+      <input type="text"
+      placeholder="Autor do post"
+      value={autor} onChange={ (e) => setAutor(e.target.value)}/>
+
+      <button onClick={adicionarPosts}>Inserir</button>
+      <button onClick={buscarPost}>Buscar</button>
+      <button onClick={editarPost}>Editar</button>
+
+      <ul>
+        {post.map(
+          (value) => (
+            <li key={post.id}>
+              <strong>ID: {value.id}</strong>
+              <span>Titulo: {value.titulo}</span>
+              <span>Autor: {value.autor}</span>
+              <button onClick={() => excluirPost(value.id)}>Apagar</button>
+            </li>
+          )
+        )}
+      </ul>
+    </div>
+  );
+}
