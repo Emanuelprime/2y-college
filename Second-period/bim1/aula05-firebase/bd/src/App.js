@@ -116,7 +116,7 @@ onAuthStateChanged
 
   async function fazerLogout(){
     await signOut(auth)
-    setUsuario(false)
+    setUsuario(false) 
     setDetalhesUsuario({})
   }
 
