@@ -28,7 +28,6 @@ const[senha, setSenha] = useState ('');
 const[usuario, setUsuario] = useState (false);
 const[tarefa, setTarefa] = useState ([]);
 
-
 useEffect(() => {
     async function carregarTarefa(){
         const dados = onSnapshot(collection(db,"tarefas"),(snapshot)=>{
@@ -139,7 +138,9 @@ async function editarTarefa(){
 
   return(
     <div>
-      <h1>ReactJS + Firebase</h1>
+      <header>
+        <h1>Lista de Tarefas</h1>
+      </header>
 
       {usuario && (
         <div>
