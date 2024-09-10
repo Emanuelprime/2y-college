@@ -27,7 +27,7 @@ const[email, setEmail] = useState ('');
 const[senha, setSenha] = useState ('');
 const[usuario, setUsuario] = useState (false);
 const[tarefa, setTarefa] = useState ([]);
-}
+
 
 useEffect(() => {
     async function carregarTarefa(){
@@ -105,7 +105,7 @@ async function adicionarTarefas(){
         status: status,
     }).then(()=>{
         alert("Cadastro realizado com sucesso!")
-        setAutor('');
+        setStatus('');
         setTitulo('');
       }).catch((error)=>{
         console.log(error);
@@ -113,17 +113,96 @@ async function adicionarTarefas(){
 }
 
 async function editarTarefa(){
-    const postEditado = doc(db,"tarefas", idTarefa);
+    const tarefaEditada = doc(db,"tarefas", idTarefa);
 
-    await updateDoc(postEditado, {
+    await updateDoc(tarefaEditada, {
       titulo: titulo,
       staus: status,
     }).then(()=>{
       alert("Tarefa editado com sucesso!")
-      setIdPost('');
+      setIdTarefa('');
       setTitulo('');
       setStatus('');
     }).catch((error)=>{
       console.log(error);
     })
   }
+  //D - delete
+  async function excluirTarefa(id){
+    const tarefaDeletada = doc(db, "tarefas", id);
+    await deleteDoc(tarefaDeletada).then(()=>{
+      alert("Tarefa deletado com sucesso")
+    }).catch((error)=>{
+      console.log(error);
+    })
+  }
+
+  return(
+    <div>
+      <h1>ReactJS + Firebase</h1>
+
+      {usuario && (
+        <div>
+          <strong>Seja bem-vindo(a)</strong>
+          <br/>
+          <button onClick={fazerLogout}>Sair</button>
+        </div>
+      )}
+
+      {!usuario &&(
+        <div>
+          <h2>Usuários</h2>
+
+          <label>Email:</label>
+          <input type="email"
+          placeholder="Digite seu email"
+          value={email} onChange={ (e) => setEmail(e.target.value)}/>
+
+          <label>Senha:</label>
+          <input type="password"
+          placeholder="Digite uma senha"
+          value={senha} onChange={ (e) => setSenha(e.target.value)}/>
+
+          <button onClick={novoUsuario}>Cadastrar</button>
+          <button onClick={logarUsuario}>Login</button>
+          </div>
+      )}
+
+      
+
+      <hr></hr>
+
+
+      <h2>Tarefas</h2>
+      <label>ID da Tarefa</label>
+      <input placehold="ID da tareda"
+      value={idTarefa} onChange={ (e) => setIdTarefa(e.target.value)}/>
+
+      <label>Título:</label>
+      <textarea
+      type="text" placholder="Titulo"
+      value={titulo} onChange={ (e) => setTitulo(e.target.value)}/>
+
+      <label>status:</label>
+      <input type="text"
+      placeholder="Status da tarefa"
+      value={status} onChange={ (e) => setStatus(e.target.value)}/>
+
+      <button onClick={adicionarTarefas}>Inserir</button>
+      <button onClick={editarTarefa}>Editar</button>
+
+      <ul>
+        {tarefa.map(
+          (value) => (
+            <li key={tarefa.id}>
+              <strong>ID: {value.id}</strong>
+              <span>Titulo: {value.titulo}</span>
+              <span>Status: {value.status}</span>
+              <button onClick={() => excluirTarefa(value.id)}>Apagar</button>
+            </li>
+          )
+        )}
+      </ul>
+    </div>
+  );
+ }
