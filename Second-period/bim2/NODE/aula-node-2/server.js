@@ -1,3 +1,4 @@
+const { readFile } = require("fs");
 const http = require("http")
 
 const requestListener = function (req, res){
@@ -5,8 +6,10 @@ const requestListener = function (req, res){
     res.writeHead(200); //Define o código de status HTTP da resposta com 200(OK)
     res.end("Você está na página inicial!"); //Escreve a resposta HTTP de volta ao cliente
 }else if (req.url ==="/sobre"){//Se o URL da solicitação for "/sobre", retorna "Voce esta na pagina sobre"
-    res.writeHead(200); 
-    res.end("Você está na página sobre!"); 
+    readFile('./sobre.txt', 'utf8', (err, data) => {
+        res.writeHead(200, { 'Content-Type': 'text/plain' });
+        res.end(data); // Send the file content as the response
+    });
 }else{//Para qualquer outro URL, retorna "Pagina não encontrada"
     res.writeHead(404);
     res.end("Pagina não encontrada")
