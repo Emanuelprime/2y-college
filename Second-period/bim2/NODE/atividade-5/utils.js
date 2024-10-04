@@ -1,0 +1,1 @@
+exports.randomico = () =>  Math.floor(Math.random() * 10 )+ 1
